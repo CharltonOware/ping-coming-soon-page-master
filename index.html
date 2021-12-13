@@ -5,30 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="https://kit.fontawesome.com/aed0fb79c4.js" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Ping coming soon page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    /* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
   </style>
 </head>
 <body>
-
-  We are launching soon!
-
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
-
+  <header>
+    <h3>PING<span class="fullstop">.</span></h3>
+    <p class="launch-intro">We are launching <strong>soon!</strong></p>
+    <p class="subscribe">Subscribe and get notified</p>
+  </header>
+  <main class="main-content">
+    <form action="" class="validate">
+      <div>
+        <input type="email" name="email" id="" placeholder="Your email address">
+      </div> 
+      <button class="email-submit" type="submit">Notify Me</button>
+    </form>
+    <div class="illustration-dashboard">
+      <img class="illustration" src="images/illustration-dashboard.png" alt="page illustration dashboard">
+    </div>
+  </main>
   <footer>
-    <p class="attribution">
+    <div class="socials">
+      <ul>
+        <li>
+          <a href="#">
+            <!-- <img class="icon-social" src="images/facebook-1.svg" alt="facebook social media"> -->
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <!-- <img class="icon-social" src="images/twitter 1.svg" alt="twitter social media"> -->
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <!-- <img class="icon-social" src="images/instagram 1.svg" alt="instagram social media"> -->
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>  
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; Copyright Ping. All rights reserved.</p>
+    </div>
+        
+    <!-- <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+      Coded by <a href="#">Charlton Oware</a>.
+    </p> -->
   </footer>
+  <script src="js/form_validate.js"></script>
 </body>
 </html>

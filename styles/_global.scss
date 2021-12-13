@@ -1,0 +1,91 @@
+// GLOBAL STYLES
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+$primary-color: hsl(223, 87%, 63%);
+$secondary1-color: hsl(223, 100%, 88%);
+$secondary2-color: hsl(354, 100%, 66%);
+$gray-text: hsl(0, 0%, 59%);
+$neutral-color: hsl(209, 33%, 12%);
+
+
+html{
+    font-size: 62.5%;//make default font-size 1rem = 10px
+}
+body{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 2rem;
+}
+header{
+    margin-top: 2rem;
+    text-align: center;
+}
+header h3{
+    padding: 2rem;
+}
+header .launch-intro{
+    font-size: 2.5rem;
+    color: $gray-text;
+}
+header .subscribe{
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+ .fullstop{
+    color: $primary-color;
+ }
+ strong{
+     color: initial;/*set color to default*/
+ }
+form{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    // width: 1280px;
+}
+input[type=email]{
+    border-radius: 2rem;
+    padding: 0.8rem;
+    border-color: lightgrey;
+    width: 100%;
+}
+.email-submit{
+    width: 5%;
+    border-radius: 2rem;
+    padding: 0.8rem;
+    border: none;
+    background-color: $primary-color;
+    color: white;
+    cursor: pointer;
+}
+.illustration-dashboard{
+    display: flex;
+    justify-content: center;
+    
+}
+/* This is the style of our error messages */
+.error{
+    //background-color: #FBE3E4;
+    border-color: red !important;
+   
+}
+.error-message{
+    padding: 0.3rem;
+    color: lightcoral;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 375px){
+ 
+}
+@media screen  and (min-width: 1440px){
+
+}
